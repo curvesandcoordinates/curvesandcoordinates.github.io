@@ -1,3 +1,97 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.theorem-callout {
+    --callout-color: 100, 100, 100;
+    
+    border-top: var(--size-2-1) solid rgb(var(--callout-color)); 
+    border-right: var(--size-2-1) dashed rgb(var(--callout-color));
+    border-left: var(--size-2-1) dashed rgb(var(--callout-color));  
+    border-bottom: none;
+    border-radius:20px;
+    background-color: transparent;
+    padding: inherit;
+    box-shadow: none;
+    font-family: Inter;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 88%;
+    margin: auto !important; 
+}
+
+.theorem-callout .callout-title {
+    padding: var(--size-2-3);
+    padding-left: var(--size-4-3);
+    text-align: center;
+    background-color: rgba(var(--callout-color), 0.1);
+    border-radius: 0 0 0px 0;
+    display: block;
+}
+
+.theorem-callout .callout-icon {
+    display: none;
+}
+
+.theorem-callout .callout-title-inner {
+    font-family: Inter;
+    font-weight: normal;
+    color: rgb(var(--callout-color));
+}
+
+.theorem-callout-subtitle {
+    font-weight: 300;
+}
+
+.theorem-callout .callout-content {
+    background-color: var(--background-primary);
+    padding: 1px 20px 2px 20px;
+    font-weight: 230;
+    text-align: justify;
+    border-radius: 0px;
+    margin-left: 0px; !important
+}
+
+.theorem-callout-definition {
+  border-top: var(--size-2-1) solid rgb(var(--callout-color)); 
+  border-right: var(--size-2-1) solid rgb(var(--callout-color));
+  border-left: var(--size-2-1) solid rgb(var(--callout-color));  
+  border-bottom: var(--size-2-1) solid rgb(var(--callout-color));
+  
+  --callout-color: var(--callout-definition);
+}
+
+.theorem-callout-remark {
+  --callout-color: var(--callout-remark);
+  border-top: none; 
+  border-right: none;
+  border-left: var(--size-2-1) solid rgb(var(--callout-color));  
+  border-bottom: none;
+}
+
+.theorem-callout-remark .callout-title {
+  background-color: transparent;
+}
+
+.theorem-callout-example, .callout[data-callout = "example"] {
+  --callout-color: var(--callout-example);
+}
+
+.theorem-callout-theorem, .theorem-callout-lemma, .theorem-callout-proposition {
+  --callout-color: 255, 160, 179;
+}
+
+
+.theme-light .theorem-callout .callout-content{
+  background-color: rgba(var(--callout-color), 0.1) !important;
+  margin-left: 0px;
+}
+
+.theme-dark .theorem-callout .callout-title{
+  background: linear-gradient(to bottom, rgba(var(--callout-color), 0.5), 20%,  rgba(0,0,0,0)) !important;
+  padding-bottom: 15px;
+}
+
+.callout:not([data-callout=note-toolbar]){
+  background: none;
+}
