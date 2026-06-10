@@ -157,6 +157,9 @@ plugins:
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
+    options:
+      localGraph:
+        depth: -1
     layout:
       position: right
       priority: 10
@@ -186,8 +189,8 @@ plugins:
   - source: github:quartz-community/tag-list
     enabled: true
     layout:
-      position: left
-      priority: 50
+      position: beforeBody
+      priority: 20
   - source: github:quartz-community/page-title
     enabled: true
     layout:
@@ -253,7 +256,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
