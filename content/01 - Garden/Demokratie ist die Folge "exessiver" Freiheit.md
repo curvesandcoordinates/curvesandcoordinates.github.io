@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-04-10T00:19:21.354+02:00
-modified: 2026-06-06T15:30:01.085+02:00
+modified: 2026-06-10T18:42:32.690+02:00
 tags:
   - idea
   - seed
@@ -9,9 +9,9 @@ tags:
   - anthropology
 ---
 
-## 🌱 Seed Idea  
+The question I had while discussing the ideas behind democracy with some friends has been:
 
-Democracy as the consequence of **excessive freedom** in society.  
+> Is the concept of democracy a liberty with have due to freedom? If we lived in a tribe getting attacked from all sides it almost seems suboptimal to have democracy. We aknowledge this by carving out paths for stricted and more concentrated control in times of war. Does this mean that democracy is a luxury of peace and freedom? In some sense maybe but also we like to tell ourselves the story of democracy as being the thing that gives us freedom.
 
 This note explores how the concept of **individualism** emerged historically and how it influenced the development of **democratic ideals**.
 
