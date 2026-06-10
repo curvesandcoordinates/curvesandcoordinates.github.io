@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-03-11T22:21:35.884+01:00
-modified: 2026-06-10T18:27:34.418+02:00
+modified: 2026-06-10T19:10:52.088+02:00
 tags:
   - philosophy
   - anthropology

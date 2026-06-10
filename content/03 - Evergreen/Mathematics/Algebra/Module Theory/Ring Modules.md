@@ -1,0 +1,80 @@
+---
+publish: true
+aliases:
+  - R-Module
+  - R-module
+  - Module
+created: 2025-11-14T13:52:52.000+01:00
+modified: 2026-06-10T19:14:50.140+02:00
+tags:
+  - thoughts
+---
+
+When defining central structures in mathematical algebra we always want to have some prototypical example that allows us to understand what structure we actually care about and when it behaves good or bad. In this case there are two paths.
+
+1. Given some $\K$-vector space $V$ we know that we have a defined scalar multiplication by elements from $\K$. This allows us to scale any vector and is a primary actor in breaking down the structure of our space to obtain finiteness in say dimension. We could say, that maybing wanting a field $\K$ here is asking a little too much and make this a nice [[Rings]] $R$
+2. Let us consider that for a given abelian grop $M$ we extended it by introducing a multiplication $M \times M \to M$. The choice of multiplying two elements seemed natural then, but we can now extend this to maybe want a multiplication $R \times M \to M$ where $R$ is a generally (nicely behaved) [[Rings]].
+
+Whichever way you pick you will find that the structure that emmerges, has many properties from vector spaces, but is in fact more general and doesn’t require as much to have as a vector space does. We lose some properties but keep most and win that many more things fit our scheme.
+
+> [!definition|\*] R-Module
+> Let $R$ be a [[Rings|unital commutative Ring]] then we call $M$ an $R$-Module if $M$ is an [[Groups|abelian group]]  equipped with a scalar multiplication
+> $R \times M \to M, \quad (r, m) \mapsto r \cdot m$
+> such that $\forall, r \in R, a,b \in M$ we have
+>
+> - $r(a + b) = ra + rb$
+> - $(r_{1} + r_{2})a = r_{1}a + r_{2} a$
+> - $r_{1} (r_{2} a) = (r_{1} r_{2}) a$
+> - $1 \cdot a = a$
+
+### Modules are one of the Most general Objects
+
+We can think of $R$-Modules as being the most general objects we often care about in algebra. Since one can always specialize from Modules to other areas, see the following List
+
+- A Ring $R$ is an $R$-Module
+- A $\K$-Vector Space $V$ is a $\K$-Module
+- A Group $G$ is naturally a $\Z$-Module in which multiplication is given by repeated application of operations.
+- An $R$-Algebra $A$ is an $R$-Module with a bilinear multiplication
+
+> [!example|\*]
+>
+> - Consider $R^X = \set{f: X \to R}$ which is an $R$-Module given by the operations
+>
+> $$$\begin{align*}
+> &(f + g)(x) = f(x) + g(x) \\
+> &(rf) (x) = r f(x)
+> \end{align*}$$
+> - Every abelian group $G$ is a $\Z$-module with $ng = \sum\limits_{i=1}^n g$
+> - Consider the intuitive $R$-module $R^n$
+> - Given a smooth manifold $M$ we can consider the set of vectorfields $\Gamma(M)$ then these are a $C^\infty (M)$-Module
+> - The function space $C^k (\R)$ is a $C^\infty (\R)$-submodule of $C(\R)$
+> $$$
+
+## Subobjects and Properties from Vector Spaces
+
+We now can also consider that all modules have many properties in common with vector space ideas
+
+> [!definition|\*] Submodules and Quotient Modules
+> Given a $R$-Module $M$ we call an $R$-Module $N$ such that $N \leq M$ and $R \cdot N = N$ a **submodule of $M$**. Given a submodule we can natually construct a new **quotient module** $R$-Module $\faktor{M}{N}$ with
+> $r \cdot [m + N] := [rm + N]$
+
+We can also consider a direct sum of Modules which is similar to vector spaces. Note though that here we define a complex object because we want to be able to consider the direct sum of inifinitely many objects.
+
+> [!definition|\*] Direct Sum of Modules
+> Let $\set{M_{\lambda}}_{\lambda \in \Lambda}$ be a family of $R$-modules. Then
+> $\bigoplus_{\lambda \in \Lambda} M_{\lambda} := \set{f: \Lambda \to \bigcup_{\lambda \in \Lambda} M_{\lambda}\midline f(\lambda) \in M_{\lambda}, \text{ for all but finitely many } \lambda: f(\lambda) = 0}$
+> equipped with $(rf)(\lambda) = rf(\lambda)$ and $(f + g) (\lambda) = f(\lambda) + g(\lambda)$
+
+If the index set is finite, this complex definition is not needed as we can define that for $|\Lambda| = n$
+$\bigoplus_{\lambda \in \Lambda} M_{\lambda} \cong M_{1} \times \ldots \times M_{n}$
+with component wise multiplication and addition.
+
+## Freeness of a Module and Basis Properties
+
+A quite central property to linear algebra is that all properties in a vector space are given by finding a basis. The main power in all of the theory lies in this. For a general $R$-Module we can also consider similar objects, and note that Modules in which this basis property is still alive are called Free. Because of the complexities given by $R$ we can note though that there might be modules that cant admit a basis-like object.
+
+They are specifically pretty, so we consider them separately under [[Free Ring Modules]]
+
+The next natrual big topic to consider is the world of Linear maps of modules, which also share many properties to the linear algebra case. For this See [[Ring Module Homomorphisms]]
+
+A central and interesting example is considering a Module generated by a matrix given by acting via a [[Matrix Polynomial Module|polynomial of matrices]].

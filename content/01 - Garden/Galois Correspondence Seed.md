@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-07-09T23:27:34.615+02:00
-modified: 2026-06-10T18:25:15.899+02:00
+modified: 2026-06-10T19:10:51.947+02:00
 tags:
   - seed
   - math

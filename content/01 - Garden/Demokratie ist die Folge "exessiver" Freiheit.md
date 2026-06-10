@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-04-10T00:19:21.354+02:00
-modified: 2026-06-10T18:42:32.690+02:00
+modified: 2026-06-10T18:48:33.614+02:00
 tags:
   - idea
   - seed

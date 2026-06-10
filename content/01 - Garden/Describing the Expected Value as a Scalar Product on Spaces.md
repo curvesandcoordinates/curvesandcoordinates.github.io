@@ -1,10 +1,9 @@
 ---
 publish: true
 created: 2025-07-09T23:10:33.001+02:00
-modified: 2026-06-06T15:30:12.819+02:00
+modified: 2026-06-10T18:48:42.301+02:00
 tags:
   - seed
-  - idea
   - math
 ---
 

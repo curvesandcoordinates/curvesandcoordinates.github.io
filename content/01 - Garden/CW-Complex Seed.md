@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-07-09T17:42:55.116+02:00
-modified: 2026-06-06T15:29:51.088+02:00
+modified: 2026-06-10T18:48:23.461+02:00
 tags:
   - math
   - to-learn

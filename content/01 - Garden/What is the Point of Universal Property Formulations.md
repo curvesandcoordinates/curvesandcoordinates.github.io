@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-07-09T22:57:06.844+02:00
-modified: 2026-06-10T18:27:19.596+02:00
+modified: 2026-06-10T19:10:52.085+02:00
 tags:
   - question
   - math

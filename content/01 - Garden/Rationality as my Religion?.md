@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-04-21T00:14:57.000+02:00
-modified: 2026-06-10T18:26:25.589+02:00
+modified: 2026-06-10T19:10:52.007+02:00
 tags:
   - philosophy
 ---

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-07-09T22:31:49.516+02:00
-modified: 2026-06-10T18:27:41.906+02:00
+modified: 2026-06-10T19:10:52.128+02:00
 tags:
   - question
   - energy

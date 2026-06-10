@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-07-09T22:34:15.674+02:00
-modified: 2026-06-10T18:26:45.292+02:00
+modified: 2026-06-10T19:10:52.033+02:00
 tags:
   - anthropology
 ---
